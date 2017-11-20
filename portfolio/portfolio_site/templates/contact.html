@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+{% block content %}
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Preloader start -->
+        <div id="preloader">
+            <div class="main-wrap">
+                <div class="ball-scale-multiple">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <!-- Preloader end -->
+
+        <!-- Component starts
+        ************************* -->
+        <!-- header area start -->
+        <header class="header-area" id="sticker">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="logo">
+                            <a href="/"><h2>Sinnh. <span>nt</span></h2></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 text-right">
+                        <div class="menu-bar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <!-- mainmenu start -->
+                        <div class="mainmenu">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/portfolio">portfolio</a></li>
+                                <li><a href="/contact">contact</a></li>
+                            </ul>
+                        </div>
+                        <!-- mainmenu end -->
+                        <!-- mobile menu area start -->
+                        <div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <!-- mobile menu start -->
+                                        <div class="mobile-menu">
+                                            <nav>
+                                                <ul class="nav">
+                                                    <li><a href="/">Home</a></li>
+                                                    <li><a href="/portfolio">portfolio</a></li>
+                                                    <li><a href="/contact">contact</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <!-- mobile menu end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mobile menu area end -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header area end -->
+    
+        <!-- breadcrumb-area start -->
+        <div class="breadcrumb-area-portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcrumb-content text-center">
+                            <h2>Contact me</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb-area end -->
+
+        <!-- contact information start -->
+        <div class="section-padding contact-information-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="contact-info-title">
+                            <h2>lots of way to contact me</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="single-contact-info">
+                            <h3><i class="flaticon-phone-call"></i>call me</h3>
+                            <p>Call me at <a href="tel:01672699288">+84 1672699288</a> to speak with me.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="single-contact-info">
+                            <h3><i class="flaticon-mail"></i>email me</h3>
+                            <p>Email me at <a href="mailto:nguyentrisinh0810@gmail.com">nguyentrisinh0810@gmail.com</a> and we willrespond as soon as we can. </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="single-contact-info">
+                            <h3><i class="flaticon-placeholder"></i>location</h3>
+                            <p>162, Nguyen Thai Son road, Go Vap district, Ho Chi Minh city, Viet Nam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact information end -->
+
+        <!-- contact form area start -->
+        <div class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading text-center">
+                            <h2>knock <span>me</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-sm-8">
+                        <div class="contact-form">
+                            <form id="contact-form" action="mail.php" method="POST">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="name" placeholder="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="tel" name="phone" placeholder="Phone number" required>
+                                    </div>
+                                </div>
+                                <input type="email" name="email" placeholder="your email" required>
+                                <input type="text" name="subject" placeholder="subject" required>
+                                <textarea name="message" id="message" placeholder="message" required></textarea>
+                                <button type="submit">send message</button>
+                                <p class="form-messege"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 col-sm-4 xs-mt-30">
+                        <ul class="footer-social-2">
+                            <li><a href="#" target="_blank"><i class="flaticon-facebook"></i> facebook</a></li>
+                            <li><a href="#" target="_blank"><i class="flaticon-twitter-logo-outline"></i> twitter</a></li>
+                            <li><a href="#" target="_blank"><i class="flaticon-google-plus-logo"></i> google plus</a></li>
+                            <li><a href="#" target="_blank"><i class="flaticon-themeforest"></i> themeforest</a></li>
+                            <li><a href="#" target="_blank"><i class="flaticon-dribble-logo"></i>dribble</a></li>
+                            <li><a href="#" target="_blank"><i class="flaticon-behance"></i> behance</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact form area end -->
+
+		<!-- footer area start -->
+		<footer class="footer-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p class="copyright-text">Copyright 2017 &copy; <a href="http://www.themeforest.net/user/royhridoy" target="_blank">RoyHridoy</a> ALL Right Reserved </p>
+						<ul class="footer-social">
+							<li><a href="#" target="_blank"><i class="flaticon-facebook"></i></a></li>
+							<li><a href="#" target="_blank"><i class="flaticon-twitter-logo-outline"></i></a></li>
+							<li><a href="#" target="_blank"><i class="flaticon-google-plus-logo"></i></a></li>
+							<li><a href="#" target="_blank"><i class="flaticon-themeforest"></i></a></li>
+							<li><a href="#" target="_blank"><i class="flaticon-dribble-logo"></i></a></li>
+							<li><a href="#" target="_blank"><i class="flaticon-behance"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer area end -->
+
+        <!-- scroll to top button start -->
+        <a href="#" class="scrollToTop"><i class="flaticon-arrows"></i></a>
+        <!-- scroll to top button end -->
+
+{% endblock %}
