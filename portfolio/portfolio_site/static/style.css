@@ -53,7 +53,7 @@ Please do not change anything here! write in a custom.css file if required!
 12. Scroll to top
 13. footer
     13.1 footer style 2
-
+14. Custom style
 
 ======================================
 [ End table content ]
@@ -2254,4 +2254,11 @@ Please do not change anything here! write in a custom.css file if required!
     border-top: 1px solid #eee;
     margin-top: 50px;
     padding: 30px 0;
+}
+
+/*************************
+14. Custom style
+*************************/
+.white--text {
+    color: white !important;
 }

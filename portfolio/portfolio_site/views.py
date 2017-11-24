@@ -29,3 +29,6 @@ def portfolio(request, *args, **kwargs):
 def contact(request, *args, **kwargs):
     return render(request, 'contact.html')
 
+
+def profile(request, *args, **kwargs):
+    return render(request, 'profile.html')

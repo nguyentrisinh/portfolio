@@ -1,74 +1,5 @@
 {% extends 'base.html' %}
 {% block content %}
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Preloader start -->
-        <div id="preloader">
-            <div class="main-wrap">
-                <div class="ball-scale-multiple">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <!-- Preloader end -->
-
-        <!-- Component starts
-        ************************* -->
-        <!-- header area start -->
-        <header class="header-area" id="sticker">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="logo">
-                            <a href="/"><h2>Sinh. <span>NT</span></h2></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-9 text-right">
-                        <div class="menu-bar">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <!-- mainmenu start -->
-                        <div class="mainmenu">
-                            <ul>
-                                <li><a href="/">Home</a></li>
-                                <li ><a href="/portfolio">portfolio</a></li>
-                                <li ><a href="/contact">contact</a></li>
-                            </ul>
-                        </div>
-                        <!-- mainmenu end -->
-                        <!-- mobile menu area start -->
-                        <div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <!-- mobile menu start -->
-                                        <div class="mobile-menu">
-                                            <nav>
-                                                <ul class="nav">
-                                                    <li><a href="/">Home</a></li>
-                                                    <li ><a href="/portfolio">portfolio</a></li>
-                                                    <li ><a href="/contact">contact</a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                        <!-- mobile menu end -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- mobile menu area end -->
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- header area end -->
-    
         <!-- breadcrumb-area start -->
         <div class="breadcrumb-area-portfolio">
             <div class="container">
@@ -81,174 +12,125 @@
                 </div>
             </div>
         </div>
-        <!-- breadcrumb-area end -->
 
-		<!-- portfolio area start -->
-		<div class="section-padding" id="portfolio">
-			<div class="container">
-				<!-- project filter end -->
-				<div class="row">
-					<div class="col-md-12">
-						<ul class="project-filter style-2 text-center">
-							<li class="active" data-filter="*">all</li>
-							<li data-filter=".design">design</li>
-							<li data-filter=".development">development</li>
-							<li data-filter=".photography">photography</li>
-							<li data-filter=".branding">branding</li>
-						</ul>
-					</div>
-				</div>
-				<!-- project filter end -->
+    		<div class="section-padding bg-grey" id="portfolio">
+    			<div class="container">
+    				<!-- section title start -->
+    				<div class="row">
+    					<div class="col-md-12">
+    						<!--<div class="section-heading text-center">-->
+    							<!--<h2>Sinh Nguyen <span>Profolio</span></h2>-->
+    						<!--</div>-->
+    					</div>
+    				</div>
 
-				<!-- all project lists start -->
-				<div class="row project-lists">
-					<!-- single project start -->
-					<div class="col-md-4 col-sm-6 col-xs-12 design branding photography">
-						<div class="single-project-item project-bg-1">
-							<div class="project-hover">
-								<div class="project-buttons">
-                                    <a href="#"><i class="flaticon-like"></i></a>
-									<a href="/static/img/portfolio/1.jpg" class="image-popup"><i class="flaticon-expand"></i></a>
-                                    <a href="/work_detail/test" target="_blank"><i class="flaticon-broken-link"></i></a>
-								</div>
-								<h3><a href="/work_detail/test">here goes projcet title</a></h3>
-								<p>design, branding, photography</p>
-							</div>
-						</div>
-					</div>
-					<!-- single project end -->
-
-					<!-- single project start -->
-					<div class="col-md-4 col-sm-6 col-xs-12 photography development">
-						<div class="single-project-item project-bg-2">
-							<div class="project-hover">
-								<div class="project-buttons">
-                                    <a href="#"><i class="flaticon-like"></i></a>
-									<a href="/static/img/portfolio/2.jpg" class="image-popup"><i class="flaticon-expand"></i></a>
-									<a href="/work_detail/test" target="_blank"><i class="flaticon-broken-link"></i></a>
-								</div>
-								<h3><a href="/work_detail/test">here goes projcet title</a></h3>
-								<p>photography, development</p>
-							</div>
-						</div>
-					</div>
-					<!-- single project end -->
-
-					<!-- single project start -->
-					<div class="col-md-4 col-sm-6 col-xs-12 branding design photography">
-						<div class="single-project-item project-bg-3">
-							<div class="project-hover">
-								<div class="project-buttons">
-                                    <a href="#"><i class="flaticon-like"></i></a>
-									<a href="/static/img/portfolio/3.jpg" class="image-popup"><i class="flaticon-expand"></i></a>
-									<a href="/work_detail/test" target="_blank"><i class="flaticon-broken-link"></i></a>
-								</div>
-								<h3><a href="/work_detail/test">here goes projcet title</a></h3>
-								<p>design, branding, photography</p>
-							</div>
-						</div>
-					</div>
-					<!-- single project end -->
-
-					<!-- single project start -->
-					<div class="col-md-4 col-sm-6 col-xs-12 branding development">
-						<div class="single-project-item project-bg-4">
-							<div class="project-hover">
-								<div class="project-buttons">
-                                    <a href="#"><i class="flaticon-like"></i></a>
-									<a href="/static/img/portfolio/4.jpg" class="image-popup"><i class="flaticon-expand"></i></a>
-									<a href="/work_detail/test" target="_blank"><i class="flaticon-broken-link"></i></a>
-								</div>
-								<h3><a href="/work_detail/test">here goes projcet title</a></h3>
-								<p>development, branding</p>
-							</div>
-						</div>
-					</div>
-					<!-- single project end -->
-
-					<!-- single project start -->
-					<div class="col-md-4 col-sm-6 col-xs-12 branding design development">
-						<div class="single-project-item project-bg-5">
-							<div class="project-hover">
-								<div class="project-buttons">
-                                    <a href="#"><i class="flaticon-like"></i></a>
-									<a href="/static/img/portfolio/5.jpg" class="image-popup"><i class="flaticon-expand"></i></a>
-									<a href="/work_detail/test" target="_blank"><i class="flaticon-broken-link"></i></a>
-								</div>
-								<h3><a href="/work_detail/test">here goes projcet title</a></h3>
-								<p>design, branding, development</p>
-							</div>
-						</div>
-					</div>
-					<!-- single project end -->
-
-					<!-- single project start -->
-					<div class="col-md-4 col-sm-6 col-xs-12 design photography">
-						<div class="single-project-item project-bg-6">
-							<div class="project-hover">
-								<div class="project-buttons">
-                                    <a href="#"><i class="flaticon-like"></i></a>
-									<a href="/static/img/portfolio/6.jpg" class="image-popup"><i class="flaticon-expand"></i></a>
-									<a href="/work_detail/test" target="_blank"><i class="flaticon-broken-link"></i></a>
-								</div>
-								<h3><a href="/work_detail/test">here goes projcet title</a></h3>
-								<p>design, photography</p>
-							</div>
-						</div>
-					</div>
-					<!-- single project end -->
-
-					<!-- single project start -->
-					<div class="col-md-4 col-sm-6 col-xs-12 photography development">
-						<div class="single-project-item project-bg-7">
-							<div class="project-hover">
-								<div class="project-buttons">
-                                    <a href="#"><i class="flaticon-like"></i></a>
-									<a href="/static/img/portfolio/7.jpg" class="image-popup"><i class="flaticon-expand"></i></a>
-									<a href="/work_detail/test" target="_blank"><i class="flaticon-broken-link"></i></a>
-								</div>
-								<h3><a href="/work_detail/test">here goes projcet title</a></h3>
-								<p>development, photography</p>
-							</div>
-						</div>
-					</div>
-					<!-- single project end -->
-
-                    <!-- single project start -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 development design">
-                        <div class="single-project-item project-bg-8">
-                            <div class="project-hover">
-                                <div class="project-buttons">
-                                    <a href="#"><i class="flaticon-like"></i></a>
-                                    <a href="/static/img/portfolio/8.jpg" class="image-popup"><i class="flaticon-expand"></i></a>
-                                    <a href="/work_detail/test" target="_blank"><i class="flaticon-broken-link"></i></a>
-                                </div>
-                                <h3><a href="/work_detail/test">here goes projcet title</a></h3>
-                                <p>design, development</p>
+					<section class="portfolio-details pb-40 mt-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="portfolio-meta">
+                    <ul>
+                        <li class="row">
+                            <div class="col-md-5 no-padding-right">
+                                <i class="fa fa-building"></i>
+                                <span>Client</span>
                             </div>
-                        </div>
-                    </div>
-                    <!-- single project end -->
+                            <div class="col-md-7 no-padding-left">
+                                Germany
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-md-5 no-padding-right">
+                                <i class="fa fa-user"></i>
+                                <span>Role</span>
+                            </div>
+                            <div class="col-md-7 no-padding-left">
+                                Developer | Technical Architect
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-md-5 no-padding-right">
+                                <i class="fa fa-coffee"></i>
+                                <span>Skills</span>
+                            </div>
+                            <div class="col-md-7 no-padding-left">
+                                C++ | Qt | Win32 | MacOSX | Linux | Apple Script | SMTP/IMAP | PhantomJS
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-md-5 no-padding-right">
+                                <i class="fa fa-calendar"></i>
+                                <span>Length</span>
+                            </div>
+                            <div class="col-md-7 no-padding-left">
+                                2 years
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-md-5 no-padding-right">
+                                <i class="fa fa-link"></i>
+                                <span>Category</span>
+                            </div>
+                            <div class="col-md-7 no-padding-left">
+                                <!--{% for category in project.categories %}-->
+                                <!--{% if category == 1 %}-->
+                                <!--<i class="fa fa-mobile"></i>-->
+                                <!--{% elif category == 2 %}-->
+                                <!--<i class="fa fa-globe"></i>-->
+                                <!--{% elif category == 3 %}-->
+                                <!--<i class="fa fa-desktop"></i>-->
+                                <!--{% elif category == 4 %}-->
+                                <!--<i class="fa fa-linux"></i>-->
+                                <!--{% endif %}-->
+                                <!--{% endfor %}-->
+									<i class="fa fa-desktop"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="project-desc">
+                    <h3>GETMYINVOICES
+                        <!--{% if project.links != None %}-->
+                        <!--<ul class="horizontal float-right">-->
+                            <!--{% for link in project.links %}-->
 
-					<!-- single project start -->
-					<div class="col-md-4 col-sm-6 col-xs-12 development design">
-						<div class="single-project-item project-bg-9">
-							<div class="project-hover">
-								<div class="project-buttons">
-                                    <a href="#"><i class="flaticon-like"></i></a>
-									<a href="/static/img/portfolio/9.jpg" class="image-popup"><i class="flaticon-expand"></i></a>
-									<a href="/work_detail/test" target="_blank"><i class="flaticon-broken-link"></i></a>
-								</div>
-								<h3><a href="/work_detail/test">here goes projcet title</a></h3>
-								<p>design, development</p>
-							</div>
-						</div>
-					</div>
-					<!-- single project end -->
+                            <!--<li>-->
+                                <!--<a href="{{ link.url }}" target="_blank">-->
+                                <!--{% if link.platform == 1 %}-->
+                                <!--<i class="fa fa-apple"></i>-->
+                                 <!--{% elif link.platform == 2 %}-->
+                                <!--<i class="fa fa-android"></i>-->
+                                <!--{% elif link.platform == 3 %}-->
+                                <!--<i class="fa fa-globe"></i>-->
+                                <!--{% elif link.platform == 4 %}-->
+                                <!--<i class="fa fa-windows"></i>-->
+                                <!--{% endif %}-->
+                                <!--</a>-->
+                            <!--</li>-->
+
+                            <!--{% endfor %}-->
+                        <!--</ul>-->
+                        <!--{% endif %}-->
+                        <ul class="horizontal float-right">
+							<li>
+								<a href="#" target="_blank">
+									<i class="fa fa-apple"></i>
+								</a>
+							</li>
+						</ul>
+                    </h3>
+                    <p>GetMyInvoices is a cloud-based accounting and invoice management software designed primarily for freelancers and small business entrepreneurs. The solution allows businesses to import bills and invoices from multiple sources and create a centralized repository of expenses, documents, and payment receipts. GetMyInvoices helps businesses fetch invoices from over 500 online portals, manage funds, and transfer invoice details to an integrated bookkeeping service such as Xero, Dropbox, FastBill, Zoho Books and Billy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 				</div>
-				<!-- all project lists end -->
 			</div>
-		</div>
+
 		<!-- portfolio area end -->
 
 		<!-- footer area start -->

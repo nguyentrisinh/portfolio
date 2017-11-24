@@ -15,6 +15,22 @@
         ************************* -->
         <link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.ico">
 
+        <!-- all css here -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+
+        <link rel="stylesheet" href="/static/css/et-line-fonts.css">
+        <link rel="stylesheet" href=/static/css/magnific-popup.css">
+        <link rel="stylesheet" href="/static/css/meanmenu.css">
+        <link rel="stylesheet" href="/static/css/shortcode/shortcodes.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/css/responsive.css">
+        <!--<link rel="stylesheet" href="../static/css/bundle.css">-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
         <!-- All CSS
         ************************* -->
         <!-- normalize css
@@ -76,6 +92,77 @@
 
     </head>
     <body>
+            <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Preloader start -->
+        <div id="preloader">
+            <div class="main-wrap">
+                <div class="ball-scale-multiple">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <!-- Preloader end -->
+
+        <!-- Component starts
+        ************************* -->
+        <!-- header area start -->
+        <header class="header-area hidden-menu-bar"  id="sticker">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="logo">
+                            <a href="#"><h2>Sinh. <span>nt</span></h2></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 text-right">
+                    	<!-- mainmenu start -->
+                        <div class="mainmenu">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li ><a href="/portfolio">portfolio</a></li>
+                                <li ><a href="/profile">profile</a></li>
+                                <li ><a href="/contact">contact</a></li>
+                            </ul>
+                        </div>
+                    	<!-- mainmenu end -->
+		                <!-- mobile menu area start -->
+		                <div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
+		                    <div class="container">
+		                        <div class="row">
+		                            <div class="col-xs-12">
+		                                <!-- mobile menu start -->
+		                                <div class="mobile-menu">
+		                                    <nav>
+		                                        <ul class="nav">
+		                                            <li><a href="#">Home</a>
+														<ul>
+															<li><a href="#service" class="smooth">What i do</a></li>
+															<li><a href="#portfolio" class="smooth">See my work</a></li>
+															<li><a href="#contact" class="smooth">Contact me</a></li>
+														</ul>
+		                                            </li>
+		                                            <li><a href="/portfolio">portfolio</a></li>
+		                                            <li><a href="/profile">profile</a></li>
+		                                            <li><a href="/contact">contact</a></li>
+		                                        </ul>
+		                                    </nav>
+		                                </div>
+		                                <!-- mobile menu end -->
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		                <!-- mobile menu area end -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header area end -->
     {% block content %}
 
     {% endblock %}
@@ -138,5 +225,16 @@
         <!-- Main js
         ************************* -->
         <script src="/static/js/main.js"></script>
+
+
+        <!-- all js here -->
+        <!--<script src="https://cdn.jsdelivr.net/jquery/1.12.0/jquery.min.js"></script>-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js"></script>
+        <script src="/static/js/jquery.meanmenu.js"></script>
+        <script src="/static/js/main.js"></script>
+
     </body>
 </html>
