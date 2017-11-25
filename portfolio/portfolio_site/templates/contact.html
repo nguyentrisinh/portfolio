@@ -28,19 +28,19 @@
                     <div class="col-sm-4">
                         <div class="single-contact-info">
                             <h3><i class="flaticon-phone-call"></i>call me</h3>
-                            <p>Call me at <a href="tel:01672699288">+84 1672699288</a> to speak with me.</p>
+                            <p>Call me at <a href="tel:{{ contact.phone_one }}">{{ contact.phone_one }}</a> to speak with me.</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="single-contact-info">
                             <h3><i class="flaticon-mail"></i>email me</h3>
-                            <p>Email me at <a href="mailto:nguyentrisinh0810@gmail.com">nguyentrisinh0810@gmail.com</a> and we willrespond as soon as we can. </p>
+                            <p>Email me at <a href="mailto:{{contact.email_one}}">{{ contact.email_one }}</a> and we will respond as soon as we can. </p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="single-contact-info">
                             <h3><i class="flaticon-placeholder"></i>location</h3>
-                            <p>162, Nguyen Thai Son road, Go Vap district, Ho Chi Minh city, Viet Nam</p>
+                            <p>{{ contact.address }}</p>
                         </div>
                     </div>
                 </div>

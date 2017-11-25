@@ -5,10 +5,16 @@ from django.template import loader, Context
 
 from django.shortcuts import render
 
+from .models import Contact
+
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    contact = Contact.objects.all().first()
+    context = {
+        "contact": contact
+    }
+    return render(request, 'index.html', context=context)
 
 
 def work_detail(request, *args, **kwargs):
@@ -27,7 +33,11 @@ def portfolio(request, *args, **kwargs):
 
 
 def contact(request, *args, **kwargs):
-    return render(request, 'contact.html')
+    contact = Contact.objects.all().first()
+    context = {
+        "contact": contact
+    }
+    return render(request, 'contact.html', context=context)
 
 
 def profile(request, *args, **kwargs):

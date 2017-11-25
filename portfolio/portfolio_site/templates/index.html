@@ -306,17 +306,17 @@
     						<ul class="find-info">
     							<li>
     								<i class="flaticon-placeholder"></i>
-    								335/12 Nguyen Thai Son street, Ho Chi Minh city, Viet Nam<br>
+    								{{ contact.address }}<br>
     							</li>
     							<li>
     								<i class="flaticon-phone-call"></i>
-    								<a href="tel:123456789">+84-1672699288</a>
-    								<a href="tel:983254435">+84-983254435</a>
+    								<a>{{ contact.phone_one }}</a>
+    								<a>{{ contact.phone_two }}</a>
     							</li>
     							<li>
     								<i class="flaticon-mail"></i>
-    								<a href="mailto:nguyentrisinh0810@gmail.com">nguyentrisinh0810@gmail.com</a>
-    								<a href="mailto:14520764@gm.uit.edu.vn">14520764@gm.uit.edu.vn</a>
+    								<a href="mailto:{{ contact.email_one }}">{{ contact.email_one }}</a>
+    								<a href="mailto:{{ contact.email_two }}">{{ contact.email_two }}</a>
     							</li>
     						</ul>
     					</div>
