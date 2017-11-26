@@ -1,17 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
         <!-- breadcrumb-area start -->
-        <div class="breadcrumb-area">
+        <div class="breadcrumb-area-portfolio">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="breadcrumb-content text-center">
-                            <h2>portfolio details 8</h2>
-                            <ul class="breadcrumb">
-                                <li><a href="index.html">home</a></li>
-                                <li> <a href="portfolio-masonry-1.html"> portfolio</a></li>
-                                <li>portfolio details 8</li>
-                            </ul>
+                            <h2>{{project.title}}</h2>
                         </div>
                     </div>
                 </div>
@@ -20,63 +15,139 @@
         <!-- breadcrumb-area end -->
 
 		<!-- portfolio details start -->
-        <div class="section-padding">
+        <div class="project-detail-section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="portfolio-details-items">
+                        <div class="portfolio-details-items ">
                             <!-- portfolio details info start -->
-                            <div class="portfolio-details-info top">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <!-- short description start -->
-                                        <div class="short-description">
-                                            <h4>category: <span>{{ content }}</span></h4>
-                                            <h4>publish date: <span>12 Aug 2017</span></h4>
-                                            <h4>live link: <span><a href="#" target="_blank">www.website.com</a></span></h4>
-                                            <h4>client name: <span>lous doe</span></h4>
+                            <section class="portfolio-details pb-40 mt-40">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="portfolio-meta">
+                                                <ul>
+                                                    <li class="row">
+                                                        <div class="col-md-5 no-padding-right">
+                                                            <i class="fa fa-building"></i>
+                                                            <span>Client</span>
+                                                        </div>
+                                                        <div class="col-md-7 no-padding-left">
+                                                            {{ project.client }}
+                                                        </div>
+                                                    </li>
+                                                    <li class="row">
+                                                        <div class="col-md-5 no-padding-right">
+                                                            <i class="fa fa-user"></i>
+                                                            <span>Role</span>
+                                                        </div>
+                                                        <div class="col-md-7 no-padding-left">
+                                                            {{ project.role }}
+                                                        </div>
+                                                    </li>
+                                                    <li class="row">
+                                                        <div class="col-md-5 no-padding-right">
+                                                            <i class="fa fa-coffee"></i>
+                                                            <span>Skills</span>
+                                                        </div>
+                                                        <div class="col-md-7 no-padding-left">
+                                                            {{ project.skills }}
+                                                        </div>
+                                                    </li>
+                                                    <li class="row">
+                                                        <div class="col-md-5 no-padding-right">
+                                                            <i class="fa fa-calendar"></i>
+                                                            <span>Length</span>
+                                                        </div>
+                                                        <div class="col-md-7 no-padding-left">
+                                                            {{ project.length }}
+                                                        </div>
+                                                    </li>
+                                                    <li class="row">
+                                                        <div class="col-md-5 no-padding-right">
+                                                            <i class="fa fa-link"></i>
+                                                            <span>Category</span>
+                                                        </div>
+                                                        <div class="col-md-7 no-padding-left">
+                                                            {% for category in project.categories %}
+                                                            {% if category.type == 1 %}
+                                                            <i class="fa fa-mobile category-icon-site-16"></i>
+                                                            {% elif category.type == 2 %}
+                                                            <i class="fa fa-globe category-icon-site-16"></i>
+                                                            {% elif category.type == 3 %}
+                                                            <i class="fa fa-desktop category-icon-site-16"></i>
+                                                            {% elif category.type == 4 %}
+                                                            <i class="fa fa-linux category-icon-site-16"></i>
+                                                            {% endif %}
+                                                            {% endfor %}
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <!-- short description end -->
-                                    </div>
-                                    <div class="col-md-8">
-                                        <!-- description start -->
-                                        <div class="description">
-                                            <h3>here goes project title</h3>
-                                            <h4>subtile of the project</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quidem eligendi provident, harum cupiditate quam. Animi ab delectus nostrum, consectetur aliquid dolorum vel at sit quos nisi itaque ullam tempore ea, optio repudiandae earum cum!</p>
-                                            <p>Lorem ipsum dolor sit amet, conse ctetur adipis icing elit. Tempora sed, explicabo est eligendi? Quaerat, quis, laborum. Consectetur voluptate at tempore. conse ctetur adipis icing elit.</p>
+                                        <div class="col-md-8">
+                                            <div class="project-desc">
+                                                <h3>{{ project.title }}
+                                                    {% if project.links != None %}
+                                                    <ul class="horizontal float-right">
+                                                        {% for link in project.links %}
+
+                                                        <li>
+                                                            <a href="{{ link.url }}" target="_blank">
+                                                            {% if link.platform == 1 %}
+                                                            <i class="fa fa-apple"></i>
+                                                             {% elif link.platform == 2 %}
+                                                            <i class="fa fa-android"></i>
+                                                            {% elif link.platform == 3 %}
+                                                            <i class="fa fa-globe"></i>
+                                                            {% elif link.platform == 4 %}
+                                                            <i class="fa fa-windows"></i>
+                                                            {% endif %}
+                                                            </a>
+                                                        </li>
+
+                                                        {% endfor %}
+                                                    </ul>
+                                                    {% endif %}
+                                                </h3>
+                                                <p>{{ project.description }}</p>
+                                            </div>
                                         </div>
-                                        <!-- description end -->
                                     </div>
                                 </div>
-                            </div>
+                            </section>
                             <!-- portfolio details info end -->
 
                             <!-- item imgs start -->
                             <div class="portfolio-multiple-img">
                                 <div class="row">
+                                    {% for image in project.images %}
                                     <div class="col-sm-4">
                                         <div class="item-img">
-                                            <img src="/static/img/portfolio/1.jpg" alt="">
+                                            <img src="/media/{{ image.picture }}" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-sm-4">
-                                        <div class="item-img">
-                                            <img src="/static/img/portfolio/2.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="item-img">
-                                            <img src="/static/img/portfolio/3.jpg" alt="">
-                                        </div>
-                                    </div>
+                                    {% endfor %}
                                 </div>
                             </div>
                             <!-- item imgs end -->
                             <!-- pager start -->
                             <ul class="pager">
-                                <li class="previous"><a href="#" class="filled-btn"><i class="flaticon-back"></i> previous project</a></li>
-                                <li class="next"><a href="#" class="filled-btn">next project <i class="flaticon-next"></i></a></li>
+                                {% if previous_project is not None %}
+                                <li class="previous">
+                                    <a href="/project_detail/?slug={{previous_project.slug}}" class="filled-btn">
+                                        <i class="flaticon-back"></i> previous project
+                                    </a>
+                                </li>
+                                {% endif %}
+
+                                {% if next_project is not None %}
+                                <li class="next">
+                                    <a href="/project_detail/?slug={{next_project.slug}}" class="filled-btn">next project
+                                        <i class="flaticon-next"></i>
+                                    </a>
+                                </li>
+                                {% endif %}
                             </ul>
                             <!-- pager end -->
                         </div>

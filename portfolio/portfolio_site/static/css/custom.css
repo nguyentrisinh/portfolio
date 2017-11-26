@@ -12,3 +12,9 @@ Note: This is the file where you can add your custom styles to change the look o
 /******************************************
 You can put your custom css code here:
 *******************************************/
+.category-icon-site-16 {
+    font-size: 19px !important;
+}
+.project-detail-section-padding {
+    padding: 20px 0 20px 0 !important;
+}

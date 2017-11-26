@@ -8,5 +8,5 @@ urlpatterns = [
     url(r'^profile/$', views.profile, name='profile'),
     url(r'^contact/$', views.contact, name='contact'),
     url(r'^test/$', views.test, name='test'),
-    url(r'^work_detail/(?P<job_id>[\w]+)/$', views.work_detail, name='work details'),
+    url(r'^project_detail/$', views.project_detail, name='project details'),
 ]

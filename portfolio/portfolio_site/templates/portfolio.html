@@ -24,110 +24,107 @@
     					</div>
     				</div>
 
-					<section class="portfolio-details pb-40 mt-40">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="portfolio-meta">
-                    <ul>
-                        <li class="row">
-                            <div class="col-md-5 no-padding-right">
-                                <i class="fa fa-building"></i>
-                                <span>Client</span>
-                            </div>
-                            <div class="col-md-7 no-padding-left">
-                                Germany
-                            </div>
-                        </li>
-                        <li class="row">
-                            <div class="col-md-5 no-padding-right">
-                                <i class="fa fa-user"></i>
-                                <span>Role</span>
-                            </div>
-                            <div class="col-md-7 no-padding-left">
-                                Developer | Technical Architect
-                            </div>
-                        </li>
-                        <li class="row">
-                            <div class="col-md-5 no-padding-right">
-                                <i class="fa fa-coffee"></i>
-                                <span>Skills</span>
-                            </div>
-                            <div class="col-md-7 no-padding-left">
-                                C++ | Qt | Win32 | MacOSX | Linux | Apple Script | SMTP/IMAP | PhantomJS
-                            </div>
-                        </li>
-                        <li class="row">
-                            <div class="col-md-5 no-padding-right">
-                                <i class="fa fa-calendar"></i>
-                                <span>Length</span>
-                            </div>
-                            <div class="col-md-7 no-padding-left">
-                                2 years
-                            </div>
-                        </li>
-                        <li class="row">
-                            <div class="col-md-5 no-padding-right">
-                                <i class="fa fa-link"></i>
-                                <span>Category</span>
-                            </div>
-                            <div class="col-md-7 no-padding-left">
-                                <!--{% for category in project.categories %}-->
-                                <!--{% if category == 1 %}-->
-                                <!--<i class="fa fa-mobile"></i>-->
-                                <!--{% elif category == 2 %}-->
-                                <!--<i class="fa fa-globe"></i>-->
-                                <!--{% elif category == 3 %}-->
-                                <!--<i class="fa fa-desktop"></i>-->
-                                <!--{% elif category == 4 %}-->
-                                <!--<i class="fa fa-linux"></i>-->
-                                <!--{% endif %}-->
-                                <!--{% endfor %}-->
-									<i class="fa fa-desktop"></i>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="project-desc">
-                    <h3>GETMYINVOICES
-                        <!--{% if project.links != None %}-->
-                        <!--<ul class="horizontal float-right">-->
-                            <!--{% for link in project.links %}-->
+                    {% for project in projects %}
 
-                            <!--<li>-->
-                                <!--<a href="{{ link.url }}" target="_blank">-->
-                                <!--{% if link.platform == 1 %}-->
-                                <!--<i class="fa fa-apple"></i>-->
-                                 <!--{% elif link.platform == 2 %}-->
-                                <!--<i class="fa fa-android"></i>-->
-                                <!--{% elif link.platform == 3 %}-->
-                                <!--<i class="fa fa-globe"></i>-->
-                                <!--{% elif link.platform == 4 %}-->
-                                <!--<i class="fa fa-windows"></i>-->
-                                <!--{% endif %}-->
-                                <!--</a>-->
-                            <!--</li>-->
+                    <section class="portfolio-details pb-40 mt-40">
 
-                            <!--{% endfor %}-->
-                        <!--</ul>-->
-                        <!--{% endif %}-->
-                        <ul class="horizontal float-right">
-							<li>
-								<a href="#" target="_blank">
-									<i class="fa fa-apple"></i>
-								</a>
-							</li>
-						</ul>
-                    </h3>
-                    <p>GetMyInvoices is a cloud-based accounting and invoice management software designed primarily for freelancers and small business entrepreneurs. The solution allows businesses to import bills and invoices from multiple sources and create a centralized repository of expenses, documents, and payment receipts. GetMyInvoices helps businesses fetch invoices from over 500 online portals, manage funds, and transfer invoice details to an integrated bookkeeping service such as Xero, Dropbox, FastBill, Zoho Books and Billy.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="portfolio-meta">
+                                        <ul>
+                                            <li class="row">
+                                                <div class="col-md-5 no-padding-right">
+                                                    <i class="fa fa-building"></i>
+                                                    <span>Client</span>
+                                                </div>
+                                                <div class="col-md-7 no-padding-left">
+                                                    {{ project.client }}
+                                                </div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="col-md-5 no-padding-right">
+                                                    <i class="fa fa-user"></i>
+                                                    <span>Role</span>
+                                                </div>
+                                                <div class="col-md-7 no-padding-left">
+                                                    {{ project.role }}
+                                                </div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="col-md-5 no-padding-right">
+                                                    <i class="fa fa-coffee"></i>
+                                                    <span>Skills</span>
+                                                </div>
+                                                <div class="col-md-7 no-padding-left">
+                                                    {{ project.skills }}
+                                                </div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="col-md-5 no-padding-right">
+                                                    <i class="fa fa-calendar"></i>
+                                                    <span>Length</span>
+                                                </div>
+                                                <div class="col-md-7 no-padding-left">
+                                                    {{ project.length }}
+                                                </div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="col-md-5 no-padding-right">
+                                                    <i class="fa fa-link"></i>
+                                                    <span>Category</span>
+                                                </div>
+                                                <div class="col-md-7 no-padding-left">
+                                                    {% for category in project.categories %}
+                                                    {% if category.type == 1 %}
+                                                    <i class="fa fa-mobile category-icon-site-16"></i>
+                                                    {% elif category.type == 2 %}
+                                                    <i class="fa fa-globe category-icon-site-16"></i>
+                                                    {% elif category.type == 3 %}
+                                                    <i class="fa fa-desktop category-icon-site-16"></i>
+                                                    {% elif category.type == 4 %}
+                                                    <i class="fa fa-linux category-icon-site-16"></i>
+                                                    {% endif %}
+                                                    {% endfor %}
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="project-desc">
+                                        <h3>
+                                            <a href="/project_detail/?slug={{project.slug}}">{{ project.title }}</a>
+                                            {% if project.links != None %}
+                                            <ul class="horizontal float-right">
+                                                {% for link in project.links %}
 
+                                                <li>
+                                                    <a href="{{ link.url }}" target="_blank">
+                                                    {% if link.platform == 1 %}
+                                                    <i class="fa fa-apple"></i>
+                                                     {% elif link.platform == 2 %}
+                                                    <i class="fa fa-android"></i>
+                                                    {% elif link.platform == 3 %}
+                                                    <i class="fa fa-globe"></i>
+                                                    {% elif link.platform == 4 %}
+                                                    <i class="fa fa-windows"></i>
+                                                    {% endif %}
+                                                    </a>
+                                                </li>
+
+                                                {% endfor %}
+                                            </ul>
+                                            {% endif %}
+                                        </h3>
+                                        <p>{{ project.description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {% endfor %}
 				</div>
 			</div>
 
